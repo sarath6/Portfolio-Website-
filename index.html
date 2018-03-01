@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Affordable and professional web design">
+	<meta name="keywords" content="web design, affordable web design, professional web design">
+  	<meta name="author" content="Sarath Chandra">
+<title></title> 
+
+<link rel= "stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/jquery-3.3.1.min.js">
+</script>
+
+
+</head>
+
+
+
+<body>
+<div class = "background">
+
+<div class="nav">
+	<a class="a active" href="#">HOME</a>
+    <a class="b" href="#">ABOUT ME</a>
+	<a class="c" href="#">PROJECTS</a>
+	<a class="d" href="#">C0NTACT </a>
+</div>
+
+<div class="content">
+	<div class = "home">
+	<h1> SARATH CHANDRA DUBAGUNTA</h1>
+    <h3> Junior Web Developer</h3>
+    </div>
+	<div class ="aboutme">
+		<p><b> Are you looking for a self-driven passionate Developer who yearns to learn new things quickly? If so, please consider my application. I am very eager to offer my experience of programming in front-end, middle ware and back-end technologies.<br>
+
+	I pursued my Masters in Computer Engineering from University of Cincinnati. In my Masters program, I have gained broad knowledge in Software Development, Databases, basics in Networking, writing algorithms and design principles. I have been working on number of projects during this period which highlighted my programming skills. I worked most of my projects on databases. I have worked on projects that helped me to improve my knowledge of programming in JAVA and C#. These projects helped me improve my experience in working with the front-end development.
+	I worked on multiple Internships during the last two years of my bachelors. In most of my internships I worked on Java and C# with different web technologies. These Internships provided me with the ideal opportunity in analyzing, designing, implementing, integrating and testing of Java/J2EE and C# based enterprise applications. <br>
+
+	I have taken Software Engineering courses in undergraduate and graduate studies which allowed me to know more about Testing. Such exposure to different technologies has helped me gain an overall knowledge of different frameworks. This has also helped me be versatile and stand out among others.<br>
+
+	Coupled with unique abilities both technical and extracurricular, I think I am the right candidate for this position. I have attached my resume for your consideration. I hope that this brief introduction would allow us to meet for a more formal interview. It would be great to join your company and I would be glad to apply my skill set to fulfill my roles for this job. <br> 
+I hope to interact with you soon.<br>	
+Thanks<br>
+Sarath Chandra</b>
+
+
+</p> 
+		
+    </div>
+	<div class="projects">
+		<p> <b> Here are some of the projects that showcase my experience as a Software Developer.<br></b></p>
+		<br>
+		
+		 <p><b> E COMMERCE WEBSITE WITH USER USAGE PATTERNS</b><br>
+		 <p><b>Worked on a project that studies the user usage patterns of an E-Commerce website to enhance the contents of the website based on user patterns. Designed and built a database driven website using Microsoft .Net.
+	Involved in designing system architecture and identifying proper patterns and framework for the system.
+	Participated in analysis activities, software design and design reviews.
+    Involved in client interaction as well as client demonstration.
+	Involved in writing complex queries using SQL to extract data from database and to delete the data.
+	Technologies used were C#, JavaScript, MS-SQL-Server, Microsoft.NET, Visual Studio.<br></b></p>
+	<br>
+	
+	<p><b> INSTANT IDENTIFICATION GENERATOR</b><br>
+	<p><b> Worked on a project Instant Identification Generator which creates temporary ID cards for guests and visitors in any organization with minimal effort. This can also be used for security purpose in any building.
+    Involved in coding Java, JDBC to interact with client and database.
+	Involved in writing complex queries using SQL to extract data from database and to delete the data.
+	Technologies used were Java, MySQL.</b></p>
+	<br>
+	
+	<p><b> TERADATA UNIVERSITY NETWORK CHALLENGE</b><br>
+	<p><b>Data analyzing and visualization is done on the data sets provided by TUN. Worked with huge datasets from all the social media applications like Twitter, Facebook, LinkedIn. Data sets were analyzed for a nonprofit organization called Hire Heros USA for the American Veterans. By data visualization business problems associated with the data are addressed. Tableau (Business Intelligence tool) was used for analyzing and visualizing data.<br></b></p>
+	<br>
+		
+		</div>
+	</div>	
+	
+	<div class="contact">
+		<div class= "contactform">
+			<form action = "" method = "post">
+				<input type = "text" name="" class="inputtext" value="First Name">
+				<input type = "text" name="" class="inputtext"value="Last Name">
+				<input type = "text" name="" class="inputtext"value="Your Email">
+				<textarea cols="4" rows="6" class="inputmessage">  
+Your Message.....!!</textarea>
+				<input type= "button" name="" class="submit" value="Submit">
+	
+	
+	</div>
+	
+	
+</div>
+</div>
+
+<script type = "text/javascript">
+
+		$(document).ready(function(){
+			$('a').click(function(){
+			//alert("i am click");
+			var selected = $(this);
+			$('a').removeClass('active');
+			$(selected).addClass('active');
+			
+		});	
+		var $a = $('.a'),
+		$b = $('.b'),
+		$c = $('.c'),
+		$d = $('.d'),
+		$home = $('.home'),
+		$aboutme = $('.aboutme');
+		$projects = $('.projects');
+		$contact = $('.contact');
+		
+		$a.click(function(){
+			$home.fadeIn();
+			$aboutme.fadeOut();
+			$projects.fadeOut();
+			$contact.fadeOut();
+		});
+		
+		$b.click(function(){
+			$home.fadeOut();
+			$aboutme.fadeIn();
+			$projects.fadeOut();
+			$contact.fadeOut();
+			
+		});
+		$c.click(function(){
+			$projects.fadeIn();
+			$aboutme.fadeOut();
+			$home.fadeOut();
+			$contact.fadeOut();
+		})
+		$d.click(function(){
+			$projects.fadeOut();
+			$aboutme.fadeOut();
+			$home.fadeOut();
+			$contact.fadeIn();
+		})
+		
+	});
+
+
+</script>
+</body>
+
+</html>
